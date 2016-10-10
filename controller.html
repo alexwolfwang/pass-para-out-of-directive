@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body ng-app="myAng" ng-controller="customerCtrl">
+
+<div>
+    <ul>
+        <li ng-repeat="customer in customers">{{customer.name}}</li>
+    </ul>
+</div>
+<div with-controller2 datasrc="customers" add="addCustomer(name)"></div>
+<div with-controller1 datasrc="customers" add="addCustomer"></div>
+
+
+<script src="js/dependencies/jquery-1.11.3.js"></script>
+<script src="js/dependencies/angular.js"></script>
+<script src="js/public/directiveMod.js"></script>
+<script src="js/public/directiveCtrl.js"></script>
+<script src="js/public/controllerAsDire.js"></script>
+<script src="js/public/controllerAsDire2.js"></script>
+
+</body>
+</html>
